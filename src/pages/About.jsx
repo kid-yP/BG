@@ -1,14 +1,57 @@
-const About = () => {
-    return (
-      <div className="text-white container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-8">About Our Studio</h1>
-        <div className="prose prose-invert max-w-none">
-          <p>Welcome to our indie game development studio...</p>
-          <h2 className="text-2xl font-bold mt-6">Our Team</h2>
-          <p>We're a passionate group of developers...</p>
-        </div>
+import { FaGamepad, FaCode, FaPalette } from 'react-icons/fa';
+
+export default function About() {
+  const team = [
+    {
+      name: "Alex",
+      role: "Game Designer",
+      bio: "Creates immersive game worlds with 10+ years experience",
+      icon: <FaGamepad className="text-3xl text-purple-500" />
+    },
+    {
+      name: "Sam",
+      role: "Lead Developer",
+      bio: "Specializes in Unity and mobile game optimization",
+      icon: <FaCode className="text-3xl text-purple-500" />
+    },
+    {
+      name: "Jordan",
+      role: "UI/UX Artist",
+      bio: "Makes games beautiful and intuitive to play",
+      icon: <FaPalette className="text-3xl text-purple-500" />
+    }
+  ];
+
+  return (
+    <div className="max-w-6xl mx-auto p-4 py-12 text-white">
+      <h1 className="text-4xl font-bold mb-8">About Belak Games</h1>
+      
+      <div className="mb-12">
+        <p className="text-xl mb-6">
+          We're an indie game studio passionate about creating memorable gaming experiences.
+        </p>
+        <p>
+          Founded in 2023, we specialize in mobile games with unique mechanics.
+        </p>
       </div>
-    );
-  };
-  
-  export default About;
+
+      <h2 className="text-3xl font-bold mb-8">Meet The Team</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {team.map((member, index) => (
+          <div key={index} className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="bg-gray-900 p-3 rounded-full">
+                {member.icon}
+              </div>
+              <div>
+                <h3 className="text-xl font-bold">{member.name}</h3>
+                <p className="text-gray-400">{member.role}</p>
+              </div>
+            </div>
+            <p className="text-gray-300">{member.bio}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
