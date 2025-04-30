@@ -28,14 +28,19 @@ export default function Header() {
           >
             About
           </Link>
+
+          {/* Contact Link - Already in the correct position */}
+          <Link 
+            to="/contact" 
+            className="hover:text-primary transition duration-200"
+          >
+            Contact
+          </Link>
           
           {/* Auth Buttons */}
           <div className="flex gap-4">
-            <button className="flex items-center gap-2 hover:text-primary transition duration-200">
-              <FaSignInAlt /> Sign In
-            </button>
             <button className="flex items-center gap-2 bg-primary px-4 py-2 rounded hover:bg-secondary transition duration-200">
-              <FaUser /> Register
+              <FaUser /> Log In
             </button>
           </div>
         </nav>
