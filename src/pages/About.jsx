@@ -3,9 +3,9 @@ import { FaGamepad, FaCode, FaPalette } from 'react-icons/fa';
 export default function About() {
   const team = [
     {
-      name: "Alex",
-      role: "Game Designer",
-      bio: "Creates immersive game worlds with 10+ years experience",
+      name: "Kaleb Samson Mulatu",
+      role: "Ceo & Game Designer",
+      bio: "Creates immersive game worlds with 5+ years experience",
       icon: <FaGamepad className="text-3xl text-purple-500" />
     },
     {
@@ -24,11 +24,11 @@ export default function About() {
 
   return (
     <div className="max-w-6xl mx-auto p-4 py-12 text-white">
-      <h1 className="text-4xl font-bold mb-8">About Belak Games</h1>
+      <h1 className="text-4xl font-bold mb-8">About Us</h1>
       
       <div className="mb-12">
         <p className="text-xl mb-6">
-          We're an indie game studio passionate about creating memorable gaming experiences.
+        BELAK GAMES has been dedicated to creating innovative and captivating gaming experiences for players of all ages.
         </p>
         <p>
           Founded in 2023, we specialize in mobile games with unique mechanics.
