@@ -4,12 +4,11 @@ export const games = [
       title: "Endless Drifty",
       thumbnail: "/images/space-game-thumb.jpg",
       trailer: "/videos/space-game-trailer.mp4",
-      description: "Explore alien worlds in this action-packed space RPG...",
+      description: "Simple isometric view game which is chasing away from polices...",
       playStoreUrl: "https://play.google.com/store/...",
       appStoreUrl: "https://apps.apple.com/...",
       screenshots: [
         "/images/space-game-1.jpg",
-        "/images/space-game-2.jpg"
       ],
       rating: 4.5
     },
@@ -37,7 +36,6 @@ export const games = [
       appStoreUrl: "https://apps.apple.com/...",
       screenshots: [
         "/images/space-game-1.jpg",
-        "/images/space-game-2.jpg"
       ],
       rating: 4.5, 
       reviews: 128 
