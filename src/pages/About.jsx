@@ -3,7 +3,7 @@ import { FaGamepad, FaCode, FaPalette } from 'react-icons/fa';
 export default function About() {
   const team = [
     {
-      name: "Kaleb Samson Mulatu",
+      name: "Kaleb Samson",
       role: "Ceo & Game Designer",
       bio: "Creates immersive game worlds with 5+ years experience",
       icon: <FaGamepad className="text-3xl text-purple-500" />
