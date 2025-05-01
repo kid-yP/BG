@@ -29,13 +29,13 @@ export const games = [
     {
       id: 3,
       title: "KUTILA",
-      thumbnail: "/images/space-game-thumb.jpg",
+      thumbnail: "/images/kutila.png",
       trailer: "/videos/space-game-trailer.mp4",
       description: "Explore alien worlds in this action-packed space RPG...",
       playStoreUrl: "https://play.google.com/store/...",
       appStoreUrl: "https://apps.apple.com/...",
       screenshots: [
-        "/images/space-game-1.jpg",
+        "/images/kutila.png",
       ],
       rating: 4.5, 
       reviews: 128 

@@ -4,7 +4,7 @@ export default function About() {
   const team = [
     {
       name: "Kaleb Samson",
-      role: "Ceo & Game Designer",
+      role: "CEO & Game Designer",
       bio: "Creates immersive game worlds with 5+ years experience",
       icon: <FaGamepad className="text-3xl text-purple-500" />
     },
