@@ -5,10 +5,14 @@ export default function Header() {
   return (
     <header className="bg-gray-800 text-white p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo/Home Link */}
-        <Link to="/" className="flex items-center gap-2 text-2xl font-bold">
-          <FaGamepad className="text-primary" />
-          <span>Belak Games</span>
+        {/* Logo Section - Updated with image */}
+        <Link to="/" className="flex items-center gap-3">
+          <img 
+            src="/images/BelakGameslogo.png" 
+            alt="Belak Games Logo"
+            className="h-20 w-auto" // Adjust size as needed
+          />
+          <span className="text-2xl font-bold text-white-400">BELAK GAMES</span>
         </Link>
         
         {/* Navigation */}

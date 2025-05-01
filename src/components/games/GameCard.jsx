@@ -11,7 +11,7 @@ export default function GameCard({ game }) {
         alt={game.title}
         className="w-full h-48 object-cover rounded"
       />
-      <h2 className="text-xl font-bold mt-2">{game.title}</h2>
+      <h2 className="text-xl font-bold mt-2 text-white">{game.title}</h2>
     </Link>
   )
 }
