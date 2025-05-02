@@ -4,7 +4,7 @@ import { FaGamepad, FaUser, FaSignInAlt } from 'react-icons/fa';
 export default function Header() {
   return (
     <header className="bg-gray-800 text-white p-4 shadow-lg">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="w-full px-4 flex items-center justify-between">
         {/* Logo Section - Updated with image */}
         <Link to="/" className="flex items-center gap-3">
           <img 
@@ -12,11 +12,11 @@ export default function Header() {
             alt="Belak Games Logo"
             className="h-20 w-auto" // Adjust size as needed
           />
-          <span className="text-2xl font-bold text-white-400">BELAK GAMES</span>
+          <span className="text-2xl font-bold text-white whitespace-nowrap">BELAK GAMES</span>
         </Link>
         
         {/* Navigation */}
-        <nav className="flex items-center gap-6">
+        <nav className="flex items-center gap-6 justify-end w-full">
           {/* Games Link */}
           <Link 
             to="/" 
